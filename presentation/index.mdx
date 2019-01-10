@@ -1,0 +1,329 @@
+import { Cite, S, Heading, Slide, Image, Layout, Fit, Fill, Markdown, List, ListItem } from "spectacle";
+import { DarkSlide, CodeSlide, VideoSlide } from "./slides";
+import VideoPl from "./gr-video";
+/* import {AlchemySymbols, BFam, Hyland, PhiloStone, PosterImag, Laboratory, Vitruvian, gtAppleKiss, gtCrowd, gtDots, gtGirScouts, gtJumpstart, gtKeyCity, gtSpace, gtTitleGestalt, gtUnilever, gtUSANetwork, gtWorldFish, gtWWF, grBirthOfVenus, grFastCo, grLastSupper, grLineHeight, grGarvaghMadonna, grMistyLandscape, grMonaLisa, grParthenon, grRatioCalc, grDiagram, grTeslaWebPage, grLineHeighWidth, auAppInquiry, auCyclical, auSketch} from "./images";*/
+// Slide Images
+import AlchemySymbols   from "../assets/alchemy-symbols.png";
+import BFam             from "../assets/b-fam.png";
+import Hyland           from "../assets/hyland.png";
+import PhiloStone       from "../assets/philo-stone.png";
+import PosterImage      from "../assets/poster-image.png";
+import Laboratory       from "../assets/title-slide.png";
+import Vitruvian        from "../assets/vitruvian.png";
+import Prophecy        from "../assets/prophecy.png";
+// Gestalt Principles
+import gtAppleKiss      from "../assets/gestalt/apple-kiss.png";
+import gtColorWheel     from "../assets/gestalt/color-wheel.png";
+import gtCrowd          from "../assets/gestalt/crowd.png";
+import gtDots           from "../assets/gestalt/dot-groups.png";
+import gtGirScouts      from "../assets/gestalt/girl-scouts.png";
+import gtJumpstart      from "../assets/gestalt/jumpstart.png";
+import gtKeyCity        from "../assets/gestalt/key-city.png";
+import gtSpace          from "../assets/gestalt/space.png";
+import gtTitleGestalt   from "../assets/gestalt/title-gestalt.png";
+import gtUnilever       from "../assets/gestalt/unilever.png";
+import gtUSANetwork     from "../assets/gestalt/usa-nw.png";
+import gtWorldFish      from "../assets/gestalt/world-fish.png";
+import gtWWF            from "../assets/gestalt/wwf.png";
+// Golden Ratio
+import grBirthOfVenus   from "../assets/golden-ratio/birth-of-venus.png";
+import grFastCo         from "../assets/golden-ratio/fast-co.png";
+import grGirlPhoto      from "../assets/golden-ratio/girl-photo.png";
+import grLastSupper     from "../assets/golden-ratio/last-supper.png";
+import grLineHeight     from "../assets/golden-ratio/line-height.png";
+import grGarvaghMadonna from "../assets/golden-ratio/madonna.jpg";
+import grMistyLandscape from "../assets/golden-ratio/misty-landscape.jpg";
+import grMonaLisa       from "../assets/golden-ratio/mona-lisa.png";
+import grParthenon      from "../assets/golden-ratio/parthenon.png";
+import grRatioCalc      from "../assets/golden-ratio/ratio-calc.png";
+import grDiagram        from "../assets/golden-ratio/ratio-diagram.png";
+import grSmashingMag   from "../assets/golden-ratio/smashing-mag.png";
+import grTeslaWebPage   from "../assets/golden-ratio/tesla-web-page.png";
+import grLineHeightWidth from "../assets/golden-ratio/text-hvw.png";
+// Agile Usability
+import auAppInquiry     from "../assets/agile-usability/appreciative-inquiry.png";
+import auCyclical       from "../assets/agile-usability/cyclical.png";
+import auSketch         from "../assets/agile-usability/sketch.png";
+
+export const mailTo = `ma&#105;lto&#58;B&#101;n&#106;a%6Din%&#50;EB%79&#107;ows%6&#66;i&#64;%67&#109;ail&#46;com`;
+export const mailName = `ma&#105;lto&#58;B&#101;n&#106;a%6Din%&#50;EB%79&#107;ows%6&#66;i&#64;%67&#109;ail&#46;com`;
+
+# The Alchemy of User Experience
+
+<Image src={Laboratory} />
+
+---
+
+# Benjamin Bykowski
+
+<Layout>
+<Fill>
+<List>
+  <ListItem margin="10rem 0 3rem 0">
+- T: <a style={{
+   color: '#7F6C4C',
+   textDecoration: 'none',
+   fontSize: '2rem'
+   }} href="https://www.twitter.com/Sirius_B">@Sirius_B</a></ListItem>
+  <ListItem margin="0 0 3rem 0">
+- E: <a style={{
+   color: '#7F6C4C',
+   textDecoration: 'none',
+   fontSize: '2rem'
+   }} href="mailto:benjamin.bykowski@gmail.com">benjamin.bykowski@gmail.com</a></ListItem>
+<ListItem>
+- B: <a style={{
+   color: '#7F6C4C',
+   textDecoration: 'none',
+   fontSize: '2rem'
+   }} href="W3rdOfMouth.com">W3rdOfMouth.com</a></ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="81%" src={BFam} />
+</Fill>
+</Layout>
+
+---
+
+export default DarkSlide;
+
+export const transition = ["zoom"]
+
+<Image margin="0 0 5rem 0" src={Hyland} />
+
+<Heading size="2" textColor="#4AB445">Hyland Software</Heading>
+
+---
+
+# al·che·my
+/ˈalkəmē/
+
+noun
+
+
+The medieval forerunner of chemistry, based on the supposed transformation of matter. It was concerned particularly with attempts to convert base metals into gold or to find a universal elixir.
+
+    synonyms:	chemistry, magic, sorcery, witchcraft
+
+A seemingly magical process of transformation, creation, or combination.
+---
+
+# The Alchemist’S Guide To UX
+
+- **Coded Cyphers** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - *Gestalt Principles*
+- **Material Transmutation** &emsp;&emsp;&nbsp; - *Golden Ratio*
+- **An Oracle’s Prophesy** &emsp;&emsp;&emsp;&nbsp;- *Agile Usability Testing*
+- **The Philosopher's Stone** &emsp;&nbsp;&nbsp;&nbsp;- *UX Tools*
+
+---
+
+<Image src={AlchemySymbols} />
+
+## Cyphers
+
+### Gestalt Principles of Design
+
+---
+
+<Image src={gtTitleGestalt} />
+
+> “The whole is other than the sum of the parts.”
+
+<Cite>Kurt Koffka</Cite>
+
+---
+
+# Similarity
+
+<Layout width="100%">
+<Fill>
+<List styles="list-style: none'">
+  <ListItem margin="1rem 0 3rem 0"><S type="bold">Similarity</S> occurs when objects look similar to one another. People often perceive them as a group or pattern.</ListItem>
+  <ListItem>Conversely, When similarity occurs, an object can be emphasized if it is dissimilar to the others. This is called <S type="bold">anomaly</S>.</ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="42%" margin="3rem auto 5rem auto" src={gtGirScouts} />
+  <Image width="42%" src={gtCrowd} />
+</Fill>
+</Layout>
+
+---
+
+# Continuation
+
+<Layout width="100%">
+<Fill>
+<List>
+  <ListItem margin="1rem 0 3rem 0">Elements arranged on a line or curve are perceived as more related than elements not on the line or curve.</ListItem>
+  <ListItem>Continuation occurs when the eye is compelled to move through one object and continue to another object. </ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="60%" margin="3rem auto 5rem auto" src={gtJumpstart} />
+  <Image width="60%" src={gtSpace} />
+</Fill>
+</Layout>
+
+---
+
+# Proximity
+
+<Layout>
+<Fill>
+<List>
+  <ListItem margin="1rem 0 3rem 0">Proximity occurs when elements are placed close together. They tend to be perceived as a group. </ListItem>
+  <ListItem>If individual elements are also similar, they will tend to be perceived as a single whole, even though they are separate elements.</ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="52%" margin="3rem auto 5rem auto" src={gtUnilever} />
+  <Image width="52%" src={gtDots} />
+</Fill>
+</Layout>
+
+---
+
+# Symmetry & Continuity
+
+<Layout>
+<Fill>
+<List>
+  <ListItem margin="1rem 0 3rem 0">People tend to perceive objects as symmetrical shapes that form around their center</ListItem>
+  <ListItem>Symmetry gives us a feeling of solidity and order, which we tend to seek. It’s in our nature to impose order on chaos.</ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="52%" margin="3rem auto 5rem auto" src={gtWorldFish} />
+  <Image width="52%" src={gtColorWheel} />
+</Fill>
+</Layout>
+
+---
+
+# Closure
+
+<Layout>
+<Fill>
+<List>
+  <ListItem margin="1rem 0 3rem 0">When seeing a complex arrangement of elements, we tend to look for a single, recognizable pattern.</ListItem>
+  <ListItem>Closure can be thought of as the glue holding elements together. It’s about the human tendency to seek and find patterns.</ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="52%" margin="3rem auto 5rem auto" src={gtWWF} />
+  <Image width="52%" src={gtUSANetwork} />
+</Fill>
+</Layout>
+
+---
+
+# Figure and Ground
+
+<Layout>
+<Fill>
+<List>
+  <ListItem margin="1rem 0 3rem 0">Elements are perceived as either figure (the element in focus) or ground (the background on which the figure rests).</ListItem>
+  <ListItem>The more stable the relationship, the better we can lead our audience to focus on what we want them to see.</ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="55%" margin="3rem auto 5rem auto" src={gtAppleKiss} />
+  <Image width="55%" src={gtKeyCity} />
+</Fill>
+</Layout>
+
+---
+
+<Image width="80%" src={grParthenon} />
+
+## Transmutation
+
+### The Golden Ratio
+
+---
+The Golden Ratio exists when a line is divided into two parts and the longer part (**a**) divided by the smaller part (**b**) is equal to the sum of (**a**) + (**b**) divided by (**a**), which both equal **1.618033987**
+
+<Image width="74%" src={grDiagram} />
+
+---
+export default VideoSlide;
+
+# The Golden Ratio in Nature
+
+---
+
+<Layout>
+<Fill>
+  <Image width="100%" src={grMonaLisa} />
+</Fill>
+<Fill>
+  <Image width="100%" margin="0.42rem 0 0.5rem 2rem" src={grLastSupper} />
+  <Image width="100%" margin="0 0 0 2rem" src={grMistyLandscape} />
+</Fill>
+</Layout>
+
+---
+
+<Layout>
+<Fill>
+  <Image width="82%" src={grBirthOfVenus} />
+</Fill>
+<Fill>
+  <Image width="65%" margin="0 auto 0.5rem auto" src={grGarvaghMadonna} />
+  <Image width="85%" margin="0 auto 0 auto" src={grGirlPhoto} />
+</Fill>
+</Layout>
+
+---
+
+# Divine Typography
+
+<Layout>
+<Fill>
+<List>
+  <ListItem margin="1rem 0 2rem 0" textSize="2.5rem">Every paragraph you’ve ever seen has <S type="bold">3</S> primary dimensions: font size and line height on the vertical and line width on the horizontal.</ListItem>
+  <ListItem margin="1rem 0 2rem 0" textSize="2.5rem">Font size and line height are proportionally related</ListItem>
+  <ListItem  textSize="2.5rem">As line widths increase, line heights must also increase to preserve geometric proportions and readability</ListItem>
+</List>
+</Fill>
+<Fill>
+  <Image width="85%" margin="3rem auto 2rem auto" src={grLineHeight} />
+  <Image width="85%" src={grLineHeightWidth} />
+</Fill>
+</Layout>
+
+---
+
+## Golden Layout
+
+<Image width="95%" src={grTeslaWebPage} />
+
+---
+
+## Golden Layout
+
+<Image width="92%" src={grFastCo} />
+
+---
+
+## Golden Layout
+
+<Image width="92%" src={grSmashingMag} />
+
+---
+
+<Image width="90%" src={Prophecy} />
+
+## Prophecy
+
+### Agile Usability Testing
+
+---
+
+<Image width="100%" src={PhiloStone} />
+
+## The Philosopher’s Stone
+
+### UX Toolkit
