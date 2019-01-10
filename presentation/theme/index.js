@@ -54,6 +54,9 @@ const theme = createTheme(colors, {
           textTransform: 'uppercase'
         }
       },
+      list: {
+        textShadow: '-3px 2px 7px rgba(172,173,174,0.86)'
+      },
       listItem: {
         listStyle: 'none',
         marginBottom: '2rem'

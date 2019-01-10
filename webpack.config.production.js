@@ -5,7 +5,7 @@ var webpack = require("webpack");
 
 module.exports = {
   mode: "production",
-  entry: ["babel-polyfill", "./index"],
+  entry: ["@babel/polyfill", "./index"],
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
@@ -43,6 +43,11 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: "url-loader?limit=10000&mimetype=image/svg+xml"
+      },
+      {
+        test: /\.mp4$/,
+        loader: "url-loader?limit=10000&mimetype=video/mp4",
+        include: path.join(__dirname, "assets")
       }
     ]
   }

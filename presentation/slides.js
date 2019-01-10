@@ -96,7 +96,7 @@ export const TwoColSlide = ({ children, ...rest }) => (
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
    textDecoration: 'none'
-   }} href="https://twitter.com/hashtag/uxalchemist">#UX ALCHEMIST</a>
+   }} href="https://twitter.com/hashtag/uxalchemy">#UX ALCHEMY</a>
    <a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
@@ -119,9 +119,39 @@ const darkComponents = {
 }
 
 export const DarkSlide = ({ children, ...rest }) => (
-  <Slide bgColor="rgba(242,242,242,1)" {...rest}>
+  <div>
+  <Slide bgColor="rgba(242,242,242,1)" height="90vh" padding="0 0 3rem 0" {...rest}>
     <MDXProvider components={darkComponents}>{children}</MDXProvider>
   </Slide>
+  <footer style={{
+   width: '100vw',
+   height: '10vh',
+   position: 'fixed',
+   bottom: 0,
+   left: 0,
+   zIndex: 0,
+   display: 'flex',
+   justifyContent: 'space-between',
+   alignItems: 'center',
+   backgroundColor: 'rgba(242,242,242,1)',
+   fontSize: '0.6em!important',
+   padding: '0 4.2rem'
+ }}><a style={{
+   textShadow: '#6C6782 1px 2px 7px',
+   color: '#fff',
+   textDecoration: 'none'
+   }} href="https://www.twitter.com/Sirius_B">@Sirius_B</a>
+   <a style={{
+   textShadow: '#6C6782 1px 2px 7px',
+   color: '#fff',
+   textDecoration: 'none'
+   }} href="https://twitter.com/hashtag/uxalchemy">#UX ALCHEMY</a>
+   <a style={{
+   textShadow: '#6C6782 1px 2px 7px',
+   color: '#fff',
+   textDecoration: 'none'
+   }} href="https://www.w3rdofmouth.com/">W3rdOfMouth.com</a></footer>
+ </div>
 );
 
 // CODE LAYOUT
