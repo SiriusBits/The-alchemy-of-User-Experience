@@ -4,10 +4,6 @@ import VideoBg from 'react-video-cover';
 
 class Background extends Component {
 
-  state = {
-    resizeNotifier: () => {},
-  }
-
   render() {
     const videoOptions = {
       src: SlideVideo,
@@ -20,11 +16,6 @@ class Background extends Component {
         <VideoBg
           videoOptions={videoOptions}
           remeasureOnWindowResize
-          getResizeNotifier={resizeNotifier => {
-            this.setState({
-              resizeNotifier,
-            });
-          }}
         />
     );
   }

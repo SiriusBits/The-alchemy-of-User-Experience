@@ -4,10 +4,6 @@ import Video from 'react-video-cover';
 
 class VideoPl extends Component {
 
-  state = {
-    resizeNotifier: () => {},
-  }
-
   render() {
 
     const videoOptions = {
@@ -28,11 +24,6 @@ class VideoPl extends Component {
         <Video
           videoOptions={videoOptions}
           remeasureOnWindowResize
-          getResizeNotifier={resizeNotifier => {
-            this.setState({
-              resizeNotifier,
-            });
-          }}
         />
     );
   }
