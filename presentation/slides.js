@@ -17,9 +17,9 @@ export const DefaultSlide = ({ children, ...rest }) => (
     left: 0,
     zIndex: -2,
   }}>
-  <style>{`.vsc-controller{display: none;}.spectacle-content{max-width: 1200px!important;}'`}</style>
+  <style>{`.vsc-controller{display: none;}.spectacle-content{max-width: 90vw!important;}'`}</style>
   <VideoBg />
-  <Slide bgColor="rgba(255,255,255,0.7)" height="90vh" width="100vw" padding="0 0 3rem 0" {...rest}>
+  <Slide bgColor="rgba(255,255,255,0.7)" height="90vh" width="100vw" padding="7vh 2vw 2vh 2vw" {...rest}>
     <MDXProvider components={components}>{children}</MDXProvider>
   </Slide>
   <footer style={{
@@ -31,6 +31,7 @@ export const DefaultSlide = ({ children, ...rest }) => (
     zIndex: 0,
     display: 'flex',
     justifyContent: 'space-between',
+    flexWrap: 'wrap',
     alignItems: 'center',
     backgroundColor: 'rgba(255,255,255,0.7)',
     fontSize: '0.6em!important',
@@ -38,17 +39,26 @@ export const DefaultSlide = ({ children, ...rest }) => (
   }}><a style={{
     textShadow: '#6C6782 1px 2px 7px',
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
     }} href="https://www.twitter.com/Sirius_B">@Sirius_B</a>
     <a style={{
     textShadow: '#6C6782 1px 2px 7px',
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
     }} href="https://twitter.com/hashtag/uxalchemist">#UX ALCHEMIST</a>
     <a style={{
     textShadow: '#6C6782 1px 2px 7px',
     color: '#fff',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
     }} href="https://www.w3rdofmouth.com/">W3rdOfMouth.com</a></footer>
   </div>
 );
@@ -70,7 +80,7 @@ export const TwoColSlide = ({ children, ...rest }) => (
    display: 'grid'
 
  }}>
- <Slide bgColor="rgba(255,255,255,0.7)" height="90vh" padding="0 0 3rem 0" {...rest}>
+ <Slide bgColor="rgba(255,255,255,0.7)" height="90vh" padding="7vh 2vw 2vh 2vw" {...rest}>
    <MDXProvider components={components}>{children}</MDXProvider>
  </Slide>
  </div>
@@ -83,6 +93,7 @@ export const TwoColSlide = ({ children, ...rest }) => (
    zIndex: 0,
    display: 'flex',
    justifyContent: 'space-between',
+   flexWrap: 'wrap',
    alignItems: 'center',
    backgroundColor: 'rgba(255,255,255,0.7)',
    fontSize: '0.6em!important',
@@ -90,17 +101,26 @@ export const TwoColSlide = ({ children, ...rest }) => (
  }}><a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
-   textDecoration: 'none'
+   textDecoration: 'none',
+   fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
    }} href="https://www.twitter.com/Sirius_B">@Sirius_B</a>
    <a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
-   textDecoration: 'none'
+   textDecoration: 'none',
+   fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
    }} href="https://twitter.com/hashtag/uxalchemy">#UX ALCHEMY</a>
    <a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
-   textDecoration: 'none'
+   textDecoration: 'none',
+   fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
    }} href="https://www.w3rdofmouth.com/">W3rdOfMouth.com</a></footer>
  </div>
 );
@@ -110,6 +130,7 @@ export const TwoColSlide = ({ children, ...rest }) => (
 
 const darkComponents = {
   ...components,
+  h1: ({ children }) => <Heading size={1} textColor={theme.screen.colors.quaternary}>{children}</Heading>,
   h2: ({ children }) => <Heading size={2} textColor={theme.screen.colors.quaternary}>{children}</Heading>,
   h3: ({ children }) => <Heading size={3} textColor={theme.screen.colors.quaternary}>{children}</Heading>,
   h4: ({ children }) => <Heading size={4} textColor={theme.screen.colors.quaternary}>{children}</Heading>,
@@ -120,7 +141,7 @@ const darkComponents = {
 
 export const DarkSlide = ({ children, ...rest }) => (
   <div>
-  <Slide bgColor="rgba(242,242,242,1)" height="90vh" padding="0 0 3rem 0" {...rest}>
+  <Slide bgColor="rgba(242,242,242,1)" height="90vh" padding="2vh 0 0 0" {...rest}>
     <MDXProvider components={darkComponents}>{children}</MDXProvider>
   </Slide>
   <footer style={{
@@ -132,6 +153,7 @@ export const DarkSlide = ({ children, ...rest }) => (
    zIndex: 0,
    display: 'flex',
    justifyContent: 'space-between',
+   flexWrap: 'wrap',
    alignItems: 'center',
    backgroundColor: 'rgba(242,242,242,1)',
    fontSize: '0.6em!important',
@@ -139,17 +161,26 @@ export const DarkSlide = ({ children, ...rest }) => (
  }}><a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
-   textDecoration: 'none'
+   textDecoration: 'none',
+   fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
    }} href="https://www.twitter.com/Sirius_B">@Sirius_B</a>
    <a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
-   textDecoration: 'none'
+   textDecoration: 'none',
+   fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
    }} href="https://twitter.com/hashtag/uxalchemy">#UX ALCHEMY</a>
    <a style={{
    textShadow: '#6C6782 1px 2px 7px',
    color: '#fff',
-   textDecoration: 'none'
+   textDecoration: 'none',
+   fontSize: 'calc(1.5vw + 1.5vh + .65vmin)',
+    flexGrow: '1',
+    textAlign: 'center'
    }} href="https://www.w3rdofmouth.com/">W3rdOfMouth.com</a></footer>
  </div>
 );
@@ -166,8 +197,8 @@ export const CodeSlide = ({ children, ...rest }) => (
 export const VideoSlide = ({ children, ...rest }) => (
 <div>
  <style>{`.vsc-controller{display: none;}.spectacle-content{max-width: 80vw!important; max-height: 80vh!important; margin-top: -10rem;}'`}</style>
- <Slide bgColor="#1d1f21" height="100vh" {...rest}>
-   <MDXProvider components={components}>{children}</MDXProvider>
+ <Slide bgColor="#1d1f21" height="100vh" padding="4vh 0 0 0" {...rest}>
+   <MDXProvider components={darkComponents}>{children}</MDXProvider>
    <VideoPl />
  </Slide>
  </div>
